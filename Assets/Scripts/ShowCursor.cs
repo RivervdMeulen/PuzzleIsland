@@ -25,7 +25,7 @@ public class ShowCursor : MonoBehaviour {
 			cameraLook.enabled = false;
 		} else {
 			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
+			Cursor.visible = true;
 			cameraLook.enabled = true;
 		}
 	}

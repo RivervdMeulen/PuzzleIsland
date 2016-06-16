@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class CursorChange : MonoBehaviour {
 
@@ -29,6 +30,9 @@ public class CursorChange : MonoBehaviour {
 			if(interactRayHit.collider.tag == "Interactable")
 			{
 				Cursor.SetCursor (cursorInteract, new Vector2 (16, 16), CursorMode.Auto);
+				if (Input.GetButton ("Action1")) {
+					ExecuteEvents.Execute<IEvents> (interactRayHit.collider.gameObject, null, (x, y) => x.OnClicked());
+				}
 			}
 
 		}
