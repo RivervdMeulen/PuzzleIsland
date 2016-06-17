@@ -16,5 +16,6 @@ public class DisappearOnClick : MonoBehaviour, IEvents {
 
 	public void OnClicked () {
 		transform.localScale = new Vector3 (0, 0, 0);
+		Destroy (gameObject);
 	}
 }
