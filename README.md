@@ -1,2 +1,2 @@
-# PuzzleIsland
-Puzzle island game - MatchMaker 2
+# Puzzle Game
+Puzzle game - MatchMaker 2
